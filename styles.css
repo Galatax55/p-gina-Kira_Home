@@ -1,0 +1,309 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Estilo a la imagen de portada*/
+.portada img{
+    width: 100%;
+    height: 100%;
+}
+/* Fin del estilo de la imagen de portada*/
+/* Estilo del logo */
+.logo {
+    width: 150%;
+    height: 50px;
+    float: left;
+    position: fixed;
+}
+.logo img{
+    max-width: 50px;
+    float: left;
+}
+.logo h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: lightseagreen;
+    text-decoration-line: underline;
+    font-size: 40px;
+}
+/* Fin del estilo del logo*/
+/*Estilo del menu-General*/
+nav ul{
+    list-style: none;
+    padding: 0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+nav li{
+    line-height: 3rem;
+    position: relative;
+    display: inline-block;
+}
+nav li ul{
+    position: absolute;
+}
+nav a{
+    color: black;
+    padding: 0 1.0em;
+    display: block;
+    text-decoration: none;
+    transition: .4s;
+}
+nav a:hover{
+    background: mediumturquoise;
+    color: mediumblue;
+    text-decoration: underline;
+}
+nav li ul{
+    display: none;
+}
+nav li:hover > ul{
+    display: block;
+}
+/*Capa primer nivel*/
+nav > ul{
+    background: aquamarine;
+    width: 100%;
+    display: table;
+    text-align: right;
+}
+nav > ul > li{
+    text-align: right;
+}
+/*Fin del estilo menu*/
+.presentacion{
+    text-align: center;
+    font-size: 20px;
+    font-family:monospace;
+}
+/*Estilo del blog */
+#blog .contenedor{
+    display: flex;
+    justify-content: center;
+    vertical-align: top;
+    flex-wrap: wrap;
+}
+#blog article{
+    margin: 15px;
+    text-align: center;
+}
+#blog img{
+    width: 100%;
+    max-width: 280px;
+    transition: all 0.4s ease;
+}
+#blog img:hover{
+    transform: scale(0.9);
+}
+#blog a{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    color: midnightblue;
+    text-decoration: none;
+    font-weight: bold;
+}
+#blog a:hover{
+    text-decoration-line: underline;
+    color: mediumvioletred;
+}
+/* fin del estilo blog*/
+/*Estilo de Razas de gato*/
+#gatos h2{
+    font-family: monospace;
+    font-size: 30px;
+    font-weight: bold;
+    color: midnightblue;
+}
+#gatos{
+    background: aquamarine;
+    text-align: center;
+    padding: 20px;
+}
+#gatos .informacion{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.felinos{
+    margin: 20px;
+}
+.felinos img{
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    border: 6px solid mediumturquoise;
+}
+.felinos h3{
+    color: black;
+    font-family: cursive;
+    font-weight: lighter;
+}
+/* Fin del estilo raza de gatos*/
+/* Estilo slider de marcas de comida*/
+.slider{
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    padding: auto;
+}
+.slider ul{
+    display: flex;
+    animation: cambio 15s infinite alternate linear;
+}
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+.slider img{
+    max-width: 200px;
+}
+.slider h2{
+    font-family: monospace;
+    font-size: 30px;
+    font-weight: bold;
+    color: midnightblue;
+    text-align: center;
+}
+@keyframes cambio{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+
+    
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+    
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+/* Fin del slider de marcas de comida*/
+/*Estilo del foother*/
+footer{
+    background: aquamarine;
+    padding-bottom: 0.1px;
+}
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+.contactenos{
+    width: 40%;
+    color: midnightblue;
+    font-size: 24px;
+
+}
+.brand{
+    font-weight: 200%;
+    font-size: 40px;
+}
+.brand+p{
+    font-weight: 200%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.social-media{
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+}
+.social-media svg{
+    display: inline-block;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid mediumturquoise;
+    border-radius: 50%;
+    text-align: center;
+    color: midnightblue;
+}
+.social-media svg:hover{
+    color: mediumvioletred;
+}
+/*Fin del estilo de foother*/
+/*Estilo de la seccion nutricion*/
+.comida img{
+    max-width: 110%;
+}
+.comida{
+    border: 1px solid mediumturquoise;
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 1rem;
+    margin: 20px 23px;
+    vertical-align: top;
+    height: 15%;
+    width: 13%;
+    text-align: center;
+}
+.comida figcaption{
+    color: midnightblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 13px;
+    font-weight: bold;
+}
+.comida p{
+    font-family: cursive;
+}
+.comida input:hover{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.btn-compra{
+    padding: 3px 6px;
+    color: black;
+    font-size: 15px;
+    transition: 0.2s;
+    background-color: orchid;
+    -webkit-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+.btn-compra:hover{
+    background: #a945c7;
+    box-shadow: 0 0 10px #a945c7, 0 0 50px #a945c7, 0 0 80px #a945c7;
+    transition-delay: 1s;
+    border: blueviolet;
+    font-weight: bold;
+}
+.btn-kilogramos{
+    padding: 2px 4px;
+    -webkit-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -moz-border-radius: 5px;
+    background-color: rgb(45, 170, 164);
+    border: chartreuse;
+}
+/*Fin del estilo de la seccion nutricion*/
+/*Estilo en la seccion de razas*/
+.razas{
+    border: 1px solid mediumturquoise;
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 1rem;
+    margin: 20px 23px;
+    vertical-align: top;
+    height: 21%;
+    width: 21%;
+}
+.razas img{
+    max-width: 100%;
+}
+.razas figcaption{
+    color: midnightblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+.razas p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/*Fin del estilo de la seccion razas*/
